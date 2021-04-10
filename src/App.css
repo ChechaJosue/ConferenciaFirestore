@@ -31,6 +31,10 @@ body {
   justify-content: center;
   min-height: 100vh;
   background-color: rgb(40, 37, 53);
+  background-image: url("logo-fiusac.png");
+  background-repeat: no-repeat;
+  background-size: 90% 18%;
+  background-position: center;
 }
 
 main {
@@ -58,7 +62,7 @@ form {
   height: 10vh;
   position: fixed;
   bottom: 0;
-  background-color: rgb(24, 23, 23);
+  background-color: rgb(23, 24, 24);
   width: 100%;
   max-width: 728px;
   display: flex;
@@ -101,8 +105,8 @@ button:disabled {
 
 
 .sign-in {
-  color: #282c34;
-  background: white;
+  color: white;
+  background:#f58220;
   max-width: 400px;
   margin: 0 auto;
 }
@@ -116,7 +120,7 @@ ul, li {
 }
 
 p {
-  max-width: 500px;
+  max-width: 100%;
   margin-bottom: 12px;
   line-height: 24px;
   padding: 10px 20px;
