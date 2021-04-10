@@ -9,14 +9,8 @@ import 'firebase/analytics';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
-firebase.initializeApp({
-  apiKey: "AIzaSyBGRiT0ZOIS5i3gAJZPPbqEYcLi8cN5Cpk",
-  authDomain: "conferenciafirestore.firebaseapp.com",
-  projectId: "conferenciafirestore",
-  storageBucket: "conferenciafirestore.appspot.com",
-  messagingSenderId: "682658506305",
-  appId: "1:682658506305:web:82046c95581b652221c8c0"
-})
+//Su info de firebase
+firebase.initializeApp({})
 
 const auth = firebase.auth();
 const firestore = firebase.firestore();
