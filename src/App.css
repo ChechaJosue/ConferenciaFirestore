@@ -67,7 +67,7 @@ form {
 
 form button {
   width: 20%;
-  background-color: rgb(56, 56, 143);
+  background-color: #f58220;
 }
 
 
@@ -138,7 +138,7 @@ p {
 
 .sent p {
   color: white;
-  background: #0b93f6;
+  background: #f58220;
   align-self: flex-end;
 }
 .received p {

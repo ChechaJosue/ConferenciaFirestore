@@ -10,7 +10,12 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 firebase.initializeApp({
-  // your config
+  apiKey: "AIzaSyBGRiT0ZOIS5i3gAJZPPbqEYcLi8cN5Cpk",
+  authDomain: "conferenciafirestore.firebaseapp.com",
+  projectId: "conferenciafirestore",
+  storageBucket: "conferenciafirestore.appspot.com",
+  messagingSenderId: "682658506305",
+  appId: "1:682658506305:web:82046c95581b652221c8c0"
 })
 
 const auth = firebase.auth();
@@ -25,7 +30,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>⚛️🔥💬</h1>
+        <h1>ECYS <span>🟠</span></h1>
         <SignOut />
       </header>
 
@@ -46,8 +51,8 @@ function SignIn() {
 
   return (
     <>
-      <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
-      <p>Do not violate the community guidelines or you will be banned for life!</p>
+      <button className="sign-in" onClick={signInWithGoogle}>Iniciar sesión con Google</button>
+      <p>¡Comportate o serás baneado de por vida!</p>
     </>
   )
 
@@ -55,7 +60,7 @@ function SignIn() {
 
 function SignOut() {
   return auth.currentUser && (
-    <button className="sign-out" onClick={() => auth.signOut()}>Sign Out</button>
+    <button className="sign-out" onClick={() => auth.signOut()}>Salir</button>
   )
 }
 
@@ -97,9 +102,9 @@ function ChatRoom() {
 
     <form onSubmit={sendMessage}>
 
-      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="say something nice" />
+      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Conferencia Firestore" />
 
-      <button type="submit" disabled={!formValue}>🕊️</button>
+      <button type="submit" disabled={!formValue}>📨</button>
 
     </form>
   </>)
